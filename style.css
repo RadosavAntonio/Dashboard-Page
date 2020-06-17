@@ -1,4 +1,8 @@
 /* Page setup */
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: #F2F6F9;
 }
@@ -7,7 +11,9 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: Roboto;
 }
+
 
 
 
@@ -87,6 +93,10 @@ nav {
 /* Title setup */
 .mainTitle {
   margin: 16px 0px 20px 20px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #141414;
 }
 
 
@@ -95,7 +105,7 @@ nav {
 .grid-container1 {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-gap: 20px;
   margin: 16px 20px 20px 20px;
   height: 100%;
@@ -124,11 +134,24 @@ nav {
 }
 
 .item13 {
-  grid-area: 2 / 1 / span 1 / span 2
+  /* grid-area: 2 / 1 / span 1 / span 2; */
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  /* display: fl`ex;
+  align-items: center; */
+  align-self: center;
+  justify-self: center;
+  /* text-align: center; */
+  color: #141414;
 }
 
 .item14 {
-  grid-area: 3 / 1 / span 1 / span 2
+  grid-area: 3 / 1 / span 1 / span 2;
 }
 
 .buttonGreen {
@@ -138,7 +161,6 @@ nav {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   border: unset;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -146,5 +168,31 @@ nav {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  /* animation */
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  animation: shake 3s infinite;
 }
 
+@keyframes shake {
+  0% {
+
+  }
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+  60%, 100% {
+    transform: none;
+  }
+}
