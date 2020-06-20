@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="box1Style.css">
+  <link rel="stylesheet" href="box2Style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
   <title>Dashboard Antonio</title>
 </head>
@@ -15,6 +17,7 @@
       
     </nav>
   </div>
+  <!-- DASHBOARD -->
   <div class="dashboard">
     <h1 class="mainTitle">Dashboard</h1>
     <!-- CARDS -->
@@ -23,7 +26,9 @@
         <!-- CARD 1 -->
         <div class="grid-container1">
           <div class="item11">current score</div>
-          <div class="item12">Add New Update</div>
+          <div class="item12">
+            <a href="#openPopup">Let me Pop up</a>
+          </div>
           <div class="item13">1,846</div>
           <div class="item14">
             <button class="buttonGreen">claim bonus</button>
@@ -60,13 +65,37 @@
           </div>
         </div>
       </div>
+
       <!-- CARD 3 -->
       <div class="grid-item item3">3</div>  
+
       <!-- CARD 4 -->
-      <div class="grid-item item4">4</div>
+      <div class="grid-item item4">
+      </div>
     </div>
+
+    <!-- POPUP -->
+    <div id="openPopup" class="overlay">
+      <div class="popup">
+        <div class="pItem1">ADD NEW UPDATE</div>
+        <div class="pItem2">
+          <form>
+            <input class="fTitle" type="text" name="titleName" placeholder="Title"><br>
+          </form>
+        </div>
+        <div class="pItem3">3</div>
+        <div class="pItem4">4</div>
+        <div class="pItem5">5</div>
+    
+        <!-- <h2>Here i am</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          text
+        </div> -->
+      </div>
+    </div>
+    
   </div>
 </div>
-
 </body>
 </html>
