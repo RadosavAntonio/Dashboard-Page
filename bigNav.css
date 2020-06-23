@@ -1,0 +1,107 @@
+nav {
+  position: absolute;
+  width: 262px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #1B1A2D;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+ul li:hover a img {
+  fill-opacity: unset;
+}
+.plusBtn {
+  width: 70px;
+  height: 36px;
+  /* color */
+  background: #00BD71;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  border: unset;
+  /* text setup */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+nav > img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+
+
+/* USER */
+.userName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #FFFFFF;
+}
+.userName p {
+  margin-left: 36px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #D5DEE7;
+  position: relative;
+}
+.userName p::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(images/star.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -36px;
+  top: 0;
+  bottom: 0;
+}
+.userProgress span {
+  width: 80%;
+  background-color: red;
+  height: 4px;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+.userDetails {
+  /* padding-top: 0 0 0 20px; */
+}
+.mItem1 {
+  padding: 5px 20px 0 20px;
+}
+.mItem2 {
+  padding: 44px 32px 0 32px;
+}
+.mItem3 {
+  padding: 79px 10px 20px 10px;
+}
+.mItem4 {
+  padding: 0 0 0 0;
+}
+.mItem5 {
+  padding: 0;
+}
+.mItem6 {
+  padding: 0;
+}
+.mItem7 {
+  padding: 0;
+}
+.mItem8 {
+  padding: 0;
+}

@@ -1,6 +1,9 @@
+.dashboard {
+  margin-left: 172px;
+}
 nav {
   position: absolute;
-  width: 90px;
+  width: 262px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -31,7 +34,17 @@ ul li:hover a img {
 nav > img {
   position: absolute;
   right: 0;
-  top: 18px;
+  top: 20px;
+}
+
+.bigNav h1 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px 0 20px 20px;
+  margin: 0;
 }
 
 .mItem1 {
@@ -80,7 +93,8 @@ nav > img {
   left: 80%;
   width: 90px;
   height: 28px;
-  border: 1px solid  #C4C4C4
+  border: 1px solid  #C4C4C4;
+  background-color: #FFFFFF;
 }
 
 .tooltip .tooltiptext::after {
