@@ -1,0 +1,137 @@
+nav div.smallNav{
+  display: none;
+  width: 90px;
+  background: #1B1A2D;
+}
+ul li:hover a img {
+  fill-opacity: unset;
+}
+.plusBtn {
+  width: 70px;
+  height: 36px;
+  /* color */
+  background: #00BD71;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  border: unset;
+  /* text setup */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+nav > img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.mItem1 {
+  padding: 69px 33px 0 32px;
+}
+.mItem2 {
+  padding: 44px 32px 0 32px;
+}
+.mItem3 {
+  padding: 79px 10px 20px 10px;
+}
+.mItem4 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
+  padding: 0 0 0 0;
+}
+.mItem5 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
+  padding: 0;
+}
+.mItem6 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
+  padding: 0;
+}
+.mItem7 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
+  padding: 0;
+}
+.mItem8 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
+  padding: 0;
+}
+
+.mItem4:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem5:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem6:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem7:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem8:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.icon-openMenu {
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 24px;
+}
+
+
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  margin-top: 40px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 80%;
+  width: 90px;
+  height: 28px;
+  border: 1px solid  #C4C4C4;
+  background-color: #FFFFFF;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #C4C4C4 transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

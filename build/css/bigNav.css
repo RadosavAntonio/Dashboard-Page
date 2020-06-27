@@ -1,0 +1,42 @@
+nav div.bigNav .dashboard {
+  margin-left: 172px;
+}
+
+nav div.bigNav {
+  width: 262px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #1b1a2d;
+}
+
+.bigNav h1 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 0 20px 20px;
+  margin: 0;
+}
+
+.icon-openMenu {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  transform: rotate(180deg);
+}
+
+#check {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+#check:checked ~ .bigNav {
+  display: none;
+}
+#check:checked ~ .smallNav {
+  display: block;
+}
