@@ -62,7 +62,7 @@ nav div.bigNav {
   top: 9px !important;
   right: 20px !important;
   border-radius: 50%;
-  transform: rotate(90deg);
+  transform: rotate(90deg) !important;
   color: #c4c4c4;
 }
 
@@ -71,6 +71,9 @@ nav div.bigNav {
   position: absolute; 
   top: 9px !important;
   right: 20px !important;
+}
+#seeUserDetails:checked ~ .view-more {
+  transform: rotate(270deg) !important;
 }
 
 /* OPEN / CLOSE menu */
@@ -88,6 +91,10 @@ nav div.bigNav {
   right: 0;
 }
 
+
+#check:checked ~ .icon-openMenu {
+  transform: rotate(0deg);
+}
 #check:checked ~ .bigNav {
   display: none;
 }
@@ -103,6 +110,7 @@ nav div.bigNav {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   margin-top: 10px;
+  overflow: hidden;
 }
 
 .progressBar span {
@@ -116,6 +124,17 @@ nav div.bigNav {
   background: linear-gradient(184.41deg, #21a2ff 5.59%, #3861fb 97.24%);
 }
 
+.progress {
+  background-color: #e4c465;
+  animation: progressBar 5s ease-in-out;
+  animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+0% { width: 0; }
+100% { width: 65%; }
+}
+
 .user-details {
   display: none;
 }
@@ -124,6 +143,8 @@ nav div.bigNav {
   display: block;
   height: 100%;
 }
+
+
 
 /* USER DETAILS */
 .user-grid {

@@ -30,6 +30,9 @@
   justify-self: right;
   justify-items: right;
 }
+.item12 a {
+  color: #141414;
+}
 
 .item12, .item12:hover, .item12:active, .item12:visited, .item12:focus {
   text-decoration-line: underline;
