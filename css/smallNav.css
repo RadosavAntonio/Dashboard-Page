@@ -1,17 +1,8 @@
-.dashboard {
-  margin-left: 172px;
-}
-nav {
-  position: absolute;
-  width: 262px;
-  top: 0;
-  left: 0;
-  bottom: 0;
+nav div.smallNav{
+  display: none;
+  width: 90px;
   background: #1B1A2D;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
+  height: 100vh;
 }
 ul li:hover a img {
   fill-opacity: unset;
@@ -37,16 +28,6 @@ nav > img {
   top: 20px;
 }
 
-.bigNav h1 {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 23px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 20px 0 20px 20px;
-  margin: 0;
-}
-
 .mItem1 {
   padding: 69px 33px 0 32px;
 }
@@ -57,19 +38,64 @@ nav > img {
   padding: 79px 10px 20px 10px;
 }
 .mItem4 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
   padding: 0 0 0 0;
 }
 .mItem5 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
   padding: 0;
 }
 .mItem6 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
   padding: 0;
 }
 .mItem7 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
   padding: 0;
 }
 .mItem8 {
+  font-size: 60px;
+  color: gray;
+  background-color: rgba(255, 255, 255, 0.001);
   padding: 0;
+}
+
+.mItem4:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem5:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem6:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem7:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.mItem8:hover {
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.icon-openMenu {
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 24px;
 }
 
 

@@ -26,10 +26,12 @@ body {
 
 .nav {
   flex-basis: 90px;
+  position: relative;  
 }
 
 .dashboard {
   flex: 1 1;
+  height: 100vh;
 }
 
 
@@ -88,4 +90,56 @@ body {
   grid-column: 3;
   /* width: 366px; */
   height: 306px;
+}
+
+
+/* ICONMOON */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dg37x');
+  src:  url('../fonts/icomoon.eot?dg37x#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dg37x') format('truetype'),
+    url('../fonts/icomoon.woff?dg37x') format('woff'),
+    url('../fonts/icomoon.svg?dg37x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menuItem1:before {
+  content: "\e900";
+}
+.icon-menuItem2:before {
+  content: "\e902";
+}
+.icon-menuItem3:before {
+  content: "\e904";
+}
+.icon-menuItem4:before {
+  content: "\e906";
+}
+.icon-menuItem5:before {
+  content: "\e908";
+}
+.icon-openMenu:before {
+  content: "\e90a";
+}
+
+.b-shadow {
+  filter: drop-shadow(0px 12px 14px rgba(0, 0, 0, 0.05));
 }

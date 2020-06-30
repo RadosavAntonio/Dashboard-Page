@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="box1Style.css">
-  <link rel="stylesheet" href="box2Style.css">
-  <link rel="stylesheet" href="box3Style.css">
-  <link rel="stylesheet" href="box4Style.css">
-  <link rel="stylesheet" href="smallNav.css">
-  <link rel="stylesheet" href="bigNav.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/box1Style.css">
+  <link rel="stylesheet" href="css/box2Style.css">
+  <link rel="stylesheet" href="css/box3Style.css">
+  <link rel="stylesheet" href="css/box4Style.css">
+  <link rel="stylesheet" href="css/smallNav.css">
+  <link rel="stylesheet" href="css/bigNav.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
   <title>Dashboard Antonio</title>
 </head>
@@ -17,51 +17,79 @@
 
 <div class="container">
   <div class="nav">
-    <nav class="bigNav">
-      <h1>my account</h1>
-      <img src="images/openMenu.svg" alt="Open menu arrow">
-      <ul>
-        <li class="mItem1">
-          <div class="userDetails">
-            <div class="headerUser">
-              <div class="userName">
-                <p>John Smith</p>
-                <img src="images/arrowDown.svg" alt="Arrow down">
-              </div>
-              <div class="userProgress">
-                <span></span>
-              </div>
-            </div>
-            <div class="bodyUser">
-
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="icon-openMenu">
+      </label>
+      <div class="smallNav">
+        <ul>
+          <li class="mItem1"><a href="#"><img src="images/star.svg" alt="Star"></a></li>
+          <div class="tooltip">
+            <span class="tooltiptext">1,846</span>
+            <li class="mItem2"><a href="#"><img src="images/vector.svg" alt="Vector"></a></li> 
+          </div>
+          <li class="mItem3"><a href="#"><button class="plusBtn">&#43</button></a></li>
+          <li class="mItem4"><span class="icon-menuItem1"></span></li>
+          <li class="mItem5"><span class="icon-menuItem2"></span></li>
+          <li class="mItem6"><span class="icon-menuItem3"></span></li>
+          <li class="mItem7"><span class="icon-menuItem4"></span></li>
+          <li class="mItem8"><span class="icon-menuItem5"></span></li>
+        </ul>
+      </div>
+      <div class="bigNav">
+        <h1>my account</h1>
+        <div class="user">
+          <input type="checkbox" id="seeUserDetails">
+          <label for="seeUserDetails" class="icon-openMenu view-more"></label>
+          <div class="user-info">
+            <img src="images/star.svg" alt="Star">
+            <p>john smith</p>
+            <div class="progressBar">
+              <span></span>
             </div>
           </div>
-        </li>
-        <li class="mItem2"><a href="#"><img src="images/vector.svg" alt="Vector"></a></li> 
-        <li class="mItem3"><a href="#"><button class="plusBtn">&#43</button></a></li>
-        <li class="mItem4"><a href="#"><img src="images/menuItem1.svg" alt="Menu item 1"></a></li>
-        <li class="mItem5"><a href="#"><img src="images/menuItem2.svg" alt="Menu item 1"></a></li>
-        <li class="mItem6"><a href="#"><img src="images/menuItem3.svg" alt="Menu item 1"></a></li>
-        <li class="mItem7"><a href="#"><img src="images/menuItem4.svg" alt="Menu item 1"></a></li>
-        <li class="mItem8"><a href="#"><img src="images/menuItem5.svg" alt="Menu item 1"></a></li>
-      </ul>
-    </nav>
-    <!-- <nav class="smallNav">
-      <img src="images/openMenu.svg" alt="Open menu arrow">
-      <ul>
-        <li class="mItem1"><a href="#"><img src="images/star.svg" alt="Star"></a></li>
-        <div class="tooltip">
-          <span class="tooltiptext">1,846</span>
-          <li class="mItem2"><a href="#"><img src="images/vector.svg" alt="Vector"></a></li> 
+          <div class="user-details">
+            <div class="user-grid">
+              <p class="user-score">1,846</p>
+              <div class="progressBar2">
+                <span></span>
+              </div>
+              <p class="number-ex">1,403</p>
+              <p class="number-up-ex">546</p>
+              <p class="ex">XP gained</p>
+              <p class="up-ex">XP until next level</p>
+              <button class="button-left">button</button>
+              <button class="button-right">button</button>
+            </div>
+          </div>
         </div>
-        <li class="mItem3"><a href="#"><button class="plusBtn">&#43</button></a></li>
-        <li class="mItem4"><a href="#"><img src="images/menuItem1.svg" alt="Menu item 1"></a></li>
-        <li class="mItem5"><a href="#"><img src="images/menuItem2.svg" alt="Menu item 1"></a></li>
-        <li class="mItem6"><a href="#"><img src="images/menuItem3.svg" alt="Menu item 1"></a></li>
-        <li class="mItem7"><a href="#"><img src="images/menuItem4.svg" alt="Menu item 1"></a></li>
-        <li class="mItem8"><a href="#"><img src="images/menuItem5.svg" alt="Menu item 1"></a></li>
-      </ul>
-    </nav> -->
+        <div class="nav-big">
+          <ul>
+            <li class="element">
+              <span class="icon-menuItem1"></span>
+              <p class="nav-text">Menu item</p>
+            </li>
+            <li class="element">
+              <span class="icon-menuItem2"></span>
+              <p class="nav-text">Menu item</p>
+            </li>
+            <li class="element">
+              <span class="icon-menuItem3"></span>
+              <p class="nav-text">Menu item</p>
+            </li>
+            <li class="element">
+              <span class="icon-menuItem4"></span>
+              <p class="nav-text">Menu item</p>
+            </li>
+            <li class="element">
+              <span class="icon-menuItem5"></span>
+              <p class="nav-text">Menu item</p>
+            </li>
+          </ul>
+            
+        </div>
+      </div>
+    </nav>
   </div>
   <!-- DASHBOARD -->
   <div class="dashboard">
@@ -120,32 +148,32 @@
             <scrool>
               <ul >
                 <li class="grid-container32">
-                  <img src="images/1account.png" alt="1account" class="videoImg">
-                  <div class="videoText1">About 1account age verification</div>
+                  <img src="images/movie.jpg" alt="1account" class="videoImg">
+                  <div class="videoText1">Build responsive websites</div>
                   <div class="videoText2">View time: 01h 23m</div>
                   <a class="videoPlay" href="https://www.youtube.com/watch?v=Ilw0lbSs5v4"><img src="images/playBtn.svg" alt="Play Button"></a>
                 </li>
                 <li class="grid-container32">
-                  <img src="images/1account.png" alt="1account" class="videoImg">
-                  <div class="videoText1">About 1account age verification</div>
+                  <img src="images/movie.jpg" alt="1account" class="videoImg">
+                  <div class="videoText1">Build responsive websites</div>
                   <div class="videoText2">View time: 01h 23m</div>
                   <a class="videoPlay" href="https://www.youtube.com/watch?v=Ilw0lbSs5v4"><img src="images/playBtn.svg" alt="Play Button"></a>
                 </li>
                 <li class="grid-container32">
-                  <img src="images/1account.png" alt="1account" class="videoImg">
-                  <div class="videoText1">About 1account age verification</div>
+                  <img src="images/movie.jpg" alt="1account" class="videoImg">
+                  <div class="videoText1">Build responsive websites</div>
                   <div class="videoText2">View time: 01h 23m</div>
                   <a class="videoPlay" href="https://www.youtube.com/watch?v=Ilw0lbSs5v4"><img src="images/playBtn.svg" alt="Play Button"></a>
                 </li>
                 <li class="grid-container32">
-                  <img src="images/1account.png" alt="1account" class="videoImg">
-                  <div class="videoText1">About 1account age verification</div>
+                  <img src="images/movie.jpg" alt="1account" class="videoImg">
+                  <div class="videoText1">Build responsive websites</div>
                   <div class="videoText2">View time: 01h 23m</div>
                   <a class="videoPlay" href="https://www.youtube.com/watch?v=Ilw0lbSs5v4"><img src="images/playBtn.svg" alt="Play Button"></a>
                 </li>
                 <li class="grid-container32">
-                  <img src="images/1account.png" alt="1account" class="videoImg">
-                  <div class="videoText1">About 1account age verification</div>
+                  <img src="images/movie.jpg" alt="1account" class="videoImg">
+                  <div class="videoText1">Build responsive websites</div>
                   <div class="videoText2">View time: 01h 23m</div>
                   <a class="videoPlay" href="https://www.youtube.com/watch?v=Ilw0lbSs5v4"><img src="images/playBtn.svg" alt="Play Button"></a>
                 </li>
@@ -156,8 +184,10 @@
       </div>  
 
       <!-- CARD 4 -->
+      <div class="b-shadow">
       <div class="grid-item item4">
         <div class="flip-card">
+          <input type="checkbox" id="flip">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <div class="grid-container4">
@@ -170,11 +200,13 @@
                 <div class="item43">
                   Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
                 </div>
-                <div class="item44">
-                  <p>
-                    click to flip the card
-                  </p>
-                </div>
+                <label for="flip">
+                  <div class="item44">
+                    <p>
+                      click to flip the card
+                    </p>
+                  </div>
+                </label>
               </div>
             </div>
             <div class="flip-card-back">
@@ -184,6 +216,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
 
     <!-- POPUP -->
@@ -195,15 +228,13 @@
             <input class="fTitle" type="text" name="titleName" placeholder="Title"><br>
           </form>
         </div>
-        <div class="pItem3">3</div>
-        <div class="pItem4">4</div>
-        <div class="pItem5">5</div>
-    
-        <!-- <h2>Here i am</h2>
-        <a class="close" href="#">&times;</a>
-        <div class="content">
-          text
-        </div> -->
+        <div class="pItem3">
+          <form>
+            <input class="fLink" type="text" name="linkAddress" placeholder="Link"><br>
+          </form>
+        </div>
+        <div class="pItem4"><button class="p4Button">Add Update</button></div>
+        <div class="pItem5"><a class="close" href="#"><button class="p5Button">cancel</button></a></div>
       </div>
     </div>
     
