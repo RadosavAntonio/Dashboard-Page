@@ -32,11 +32,25 @@
   background-repeat: no-repeat;
   background-size: 0% 100%;
   transition: background-size .5s, color .5s;
+  position: relative;
 }
 
-.grid-container22:hover {
-  background-size: 100% 100%;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+.grid-container22::before {
+  -webkit-transform: scaleX(0) skewX(45deg);
+  transform: scaleX(0) skewX(45deg);
+  content: "";
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#FFF6DE, #FFF6DE);
+  z-index: -1;
+}
+.grid-container22:hover::before {
+  transform: scaleX(1.5) skewX(45deg);
 }
 
 .item221{
@@ -54,6 +68,7 @@
   align-self: center;
   justify-self: left;
   justify-items: left;
+  text-align: left;
 }
 
 .item223 {
@@ -80,6 +95,25 @@
   grid-template-rows: minmax(auto, 42.5px) minmax(auto, 42.5px);
   grid-column-gap: 23px;
   width: 100%;
+  position: relative;
+}
+
+.grid-container23::before {
+  -webkit-transform: scaleX(0) skewX(45deg);
+  transform: scaleX(0) skewX(45deg);
+  content: "";
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#FFF6DE, #FFF6DE);
+  z-index: -1;
+}
+.grid-container23:hover::before {
+  transform: scaleX(1.5) skewX(45deg);
 }
 
 .item231 {
@@ -104,6 +138,7 @@
   justify-items: left;
   margin: 0;
   padding-bottom: 2px;
+  text-align: left;
 }
 
 .item2322 {
@@ -118,6 +153,7 @@
   justify-items: left;
   margin: 0;
   padding-top: 3px;
+  text-align: left;
 }
 
 .item233 {
@@ -146,6 +182,25 @@
   grid-template-rows: minmax(auto, 42.5px) minmax(auto, 42.5px);
   grid-column-gap: 23px;
   width: 100%;
+  position: relative;
+}
+
+.grid-container24::before {
+  -webkit-transform: scaleX(0) skewX(45deg);
+  transform: scaleX(0) skewX(45deg);
+  content: "";
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#FFF6DE, #FFF6DE);
+  z-index: -1;
+}
+.grid-container24:hover::before {
+  transform: scaleX(1.5) skewX(45deg);
 }
 
 .item241 {
@@ -170,6 +225,7 @@
   justify-items: left;
   padding-bottom: 2px;
   margin: 0;
+  text-align: left;
 }
 
 .item2422 {
@@ -184,6 +240,7 @@
   justify-items: left;
   margin: 0;
   padding-top: 3px;
+  text-align: left;
 }
 
 .item243 {
