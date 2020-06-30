@@ -2,6 +2,7 @@ nav div.smallNav{
   display: none;
   width: 90px;
   background: #1B1A2D;
+  height: 100vh;
 }
 ul li:hover a img {
   fill-opacity: unset;
