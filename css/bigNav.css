@@ -211,18 +211,18 @@ nav div.bigNav {
 .ex {
   grid-row: 4;
   grid-column: 1;
-  font-size: 14px;
   color: #D5DEE7;;
   justify-self: left;
   justify-items: center;
   align-self: center;
   margin: 0;
+  font-size: 12px;
 }
 
 .up-ex {
   grid-row: 4;
   grid-column: 2;
-  font-size: 14px;
+  font-size: 12px;
   color: #D5DEE7;;
   justify-self: right;
   justify-items: center;

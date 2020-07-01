@@ -130,7 +130,7 @@
   grid-template-columns: 210px 210px;
   grid-template-rows: 60px auto auto auto;
   grid-gap: 0px;
-  margin: 70px auto;
+  margin: 200px auto;
   position: relative;
   transition: all 5s ease-in-out;
   width: 420px;
@@ -188,9 +188,9 @@
   color: #585D6D;
   padding-right: 15px;
 }
-input.fTitle::placeholder {
+/* input.fTitle::placeholder {
   padding: 15px;
-}
+} */
 
 .pItem3 {
   grid-row: 3;
@@ -210,8 +210,12 @@ input.fTitle::placeholder {
   color: #585D6D;
   padding-right: 15px;
 }
-input.fLink::placeholder {
+/* input.fLink::placeholder {
   padding: 15px;
+} */
+
+form input[type="text"] {
+  padding-left: 20px;
 }
 
 p.Item4 {
